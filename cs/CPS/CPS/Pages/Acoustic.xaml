@@ -1,0 +1,202 @@
+﻿<Page x:Class="CPS.Acoustic"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CPS"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="650"
+      Title="Акустика"
+      Loaded="Page_Loaded">
+
+    <Page.Background>
+        <ImageBrush ImageSource="\\Nas-te2\all\3 курс\31 ИСП\1 гр\Жунускович Русич\3 курсс\акула\cs\acoustic.jpg"/>
+    </Page.Background>
+
+    <Page.Clip>
+        <RectangleGeometry Rect="0,0,650,700" RadiusX="25" RadiusY="25"/>
+    </Page.Clip>
+
+    <Grid>
+
+        <Border BorderThickness="2.5" BorderBrush="DarkGray" CornerRadius="20" Opacity="0.8"/>
+
+        <!--Вернуться назад-->
+        <Button
+            Click="gobackbtn_Click"
+            Name="gobackbtn"
+            BorderBrush="Transparent"
+            Content=""
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top" 
+            Margin="110,6"
+            Background="Transparent"   
+            Foreground="#FFAEC7C8"
+            FontSize="12"
+            FontFamily="Bahnschrift SemiBold"/>
+
+        <Line
+            X1="220" Y1="70"
+            X2="220" Y2="420"
+            Stroke="DarkGray"
+            StrokeThickness="4"
+            Opacity="0.5"/>
+
+        <Line
+            X1="430" Y1="70"
+            X2="430" Y2="420"
+            Stroke="DarkGray"
+            StrokeThickness="4"
+            Opacity="0.5"/>
+
+        <Line
+            X1="170" Y1="270"
+            X2="170" Y2="590"
+            Stroke="DarkGray"
+            StrokeThickness="4"
+            Opacity="0.5"/>
+
+        <Line
+            X1="480" Y1="270"
+            X2="480" Y2="590"
+            Stroke="DarkGray"
+            StrokeThickness="4"
+            Opacity="0.5"/>
+
+        <Line
+            X1="169" Y1="590"
+            X2="175" Y2="595"
+            Stroke="DarkGray"
+            StrokeThickness="4"
+            Opacity="0.1"/>
+
+        <Line
+            X1="480" Y1="590"
+            X2="474" Y2="596"
+            Stroke="DarkGray"
+            StrokeThickness="4"
+            Opacity="0.5"/>
+
+        <Line
+            X1="169" Y1="590"
+            X2="175" Y2="596"
+            Stroke="DarkGray"
+            StrokeThickness="4"
+            Opacity="0.5"/>
+
+        <Line
+            X1="220" Y1="70"
+            X2="226" Y2="64"
+            Stroke="DarkGray"
+            StrokeThickness="4"
+            Opacity="0.5"/>
+
+        <Line
+            X1="430" Y1="70"
+            X2="424" Y2="64"
+            Stroke="DarkGray"
+            StrokeThickness="4"
+            Opacity="0.5"/>
+
+        <!--Кнопка сабвуфер-->
+        <Button
+            Content="Сабвуфер"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Background="Transparent"
+            Foreground="#FF929292"
+            FontSize="30"
+            BorderBrush="Transparent"
+            FontFamily="Bahnschrift"
+            FontWeight="Bold"
+            Name="SubFoower"
+            Click="SubFoower_Click"
+            Margin="0,150,0,0"/>
+
+        <!--Кнопка ТК-->
+        <Button
+            Content="Тыловые колонки"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Background="Transparent"
+            Foreground="#FF929292"
+            FontSize="30"
+            BorderBrush="Transparent"
+            FontFamily="Bahnschrift"
+            FontWeight="Bold"
+            Name="kolonki"
+            Click="kolonki_Click"
+            Margin="0,476,0,0"/>
+
+        
+        <!--Закрыть-->
+        <Button
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Margin="35,8"
+            Width="30"
+            Height="15"
+            Name="CloseBtn"
+            Background="Transparent"
+            BorderBrush="DarkGray"
+            BorderThickness="0.65"
+            Content="X"
+            FontSize="8"
+            Command="{Binding ExitCommand}"
+            Foreground="White"
+            FontWeight="Bold">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+            <Button.ToolTip>
+                <ToolTip Background="Transparent" BorderBrush="Transparent">
+                    <StackPanel>
+                        <TextBlock 
+                            Margin="3" 
+                            Foreground="#FF790A0A">
+                            Закрыть форму
+                        </TextBlock>
+                    </StackPanel>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+        
+        
+        <!--Свернуть-->
+        <Button 
+            VerticalAlignment="Top"
+            HorizontalAlignment="Right"
+            Width="30"
+            Height="15"
+            Margin="70,8"
+            Background="Transparent"
+            Content="______"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="6"
+            BorderThickness="0.65"
+            BorderBrush="DarkGray"
+            Foreground="White"
+            Name="HideBtn"
+            Click="HideBtn_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+            <Button.ToolTip>
+                <ToolTip Background="Transparent" BorderBrush="Transparent">
+                    <StackPanel>
+                        <TextBlock 
+                    Margin="3" 
+                    Foreground="#FF790A0A">
+                    Свернуть
+                        </TextBlock>
+                    </StackPanel>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+    </Grid>
+</Page>

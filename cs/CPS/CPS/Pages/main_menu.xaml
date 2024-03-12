@@ -1,0 +1,405 @@
+﻿<Page x:Class="CPS.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CPS"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="500"
+      Title="Главное меню"
+      Loaded="Window_Loaded">
+    <Page.Clip>
+        <RectangleGeometry Rect="0,0,500,800" RadiusX="25" RadiusY="25"/>
+    </Page.Clip>
+
+    <Page.Background>
+        <ImageBrush ImageSource="\\192.168.0.6\all\3 курс\31 ИСП\1 гр\Жунускович Русич\3 курсс\акула\cs\XXXL.jpg" />
+    </Page.Background>
+    
+    
+    <Grid>
+
+        <!--Закрыть-->
+        <Button
+            HorizontalAlignment="Right"
+            Margin="0,0,20,770"
+            Width="30"
+            Height="15"
+            Name="CloseBtn"
+            Background="Transparent"
+            BorderBrush="DarkGray"
+            BorderThickness="0.65"
+            Content="X"
+            FontSize="8"
+            Command="{Binding ExitCommand}"
+            Foreground="White"
+            FontWeight="Bold">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+            <Button.ToolTip>
+                <ToolTip Background="Transparent" BorderBrush="Transparent">
+                    <StackPanel>
+                        <TextBlock 
+                    Margin="3" 
+                    Foreground="#FF790A0A">
+                    Закрыть форму
+                        </TextBlock>
+                    </StackPanel>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+
+        <!--Свернуть-->
+        <Button 
+            VerticalAlignment="Top"
+            HorizontalAlignment="Right"
+            Width="30"
+            Height="15"
+            Margin="55,8"
+            Background="Transparent"
+            Content="______"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="6"
+            BorderThickness="0.65"
+            BorderBrush="DarkGray"
+            Foreground="White"
+            Name="HideBtn"
+            Click="HideBtn_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+            <Button.ToolTip>
+                <ToolTip Background="Transparent" BorderBrush="Transparent">
+                    <StackPanel>
+                        <TextBlock 
+                            Margin="3" 
+                            Foreground="#FF790A0A">
+                            Свернуть
+                        </TextBlock>
+                    </StackPanel>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+
+
+        <Border BorderThickness="2.5" BorderBrush="White" CornerRadius="25" Opacity="0.6"/>
+
+        <!--Приветствие-->
+        <StackPanel Width="500" Height="800">
+            <Label Foreground="Gray" Name="LabelWelcome" HorizontalAlignment="Center" Margin="0,100,0,0" Width="Auto" Height="60" FontFamily="Bahnschrift SemiBold" FontSize="18" FontWeight="Bold"/>
+            
+           
+        </StackPanel>
+
+        <!--Выбор-->
+        <Label Foreground="DarkGray" Name="switcah" Content="" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Bottom" FontSize="18" FontFamily="Bahnschrift" FontWeight="Bold"/>
+
+        <!--Детали движка-->
+            <Button
+                Name="Engine"
+                Click="Engine_Click"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Content="Двигатель"
+                Margin="30,0,0,270"
+                Width="130"
+                Height="40"
+                Foreground="#FFB1B1B1"
+                FontFamily="Bodoni MT Black"
+                FontWeight="Bold"
+                FontSize="16"
+                Background="{x:Null}"
+                BorderBrush="#FFBEB7E2">
+                
+
+                <Button.ToolTip>
+                    <ToolTip Background="Transparent">
+                        <StackPanel>
+                            
+                            <TextBlock 
+                                Margin="3" 
+                                Foreground="DarkOrange">
+                                Свечи зажигания
+                                <LineBreak/>
+                                Стартер
+                                <LineBreak/>
+                                Маслянной поддон
+                                <LineBreak/>
+                                Фильтр
+                            </TextBlock>
+                            
+                        </StackPanel>
+                    </ToolTip>
+                </Button.ToolTip>
+                
+            </Button>
+
+            <!--Внешность авто-->
+            <Button
+                Name="Beaux"
+                Click="Beaux_Click"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Content="Рестайлинг"
+                Margin="30,0,0,195"
+                Width="130"
+                Height="40"
+                Foreground="#FFB1B1B1"
+                FontFamily="Bodoni MT Black"
+                FontWeight="Bold"
+                FontSize="16"
+                Background="{x:Null}"
+                BorderBrush="#FFBEB7E2">
+
+                <Button.ToolTip>
+                    <ToolTip Background="Transparent">
+                        <StackPanel>
+
+                            <TextBlock 
+                                Margin="3" 
+                                Foreground="DarkOrange">
+                                Бампера
+                                <LineBreak/>
+                                Багажники
+                                <LineBreak/>
+                                Воздухозаборник
+                                <LineBreak/>
+                                Пороги
+                                <LineBreak/>
+                                Краска(балл.)
+                            </TextBlock>
+
+                        </StackPanel>
+                    </ToolTip>
+                </Button.ToolTip>
+                
+            </Button>
+
+            <!--Колёса-->
+            <Button
+                Name="Wheels"
+                Click="Wheels_Click"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Content="Колёса"
+                Margin="30,0,0,120"
+                Width="130"
+                Height="40"
+                Foreground="#FFB1B1B1"
+                FontFamily="Bodoni MT Black"
+                FontWeight="Bold"
+                FontSize="16"
+                Background="{x:Null}"
+                BorderBrush="#FFBEB7E2">
+
+                <Button.ToolTip>
+                    <ToolTip Background="Transparent">
+                        <StackPanel>
+
+                            <TextBlock 
+                                Margin="3" 
+                                Foreground="DarkOrange">
+                                R17 R18 R19 R20 R21
+                                <LineBreak/>
+                                Touo Tires
+                                <LineBreak/>
+                                Bridgestone Corporation
+                                <LineBreak/>
+                                Pirelli
+                                <LineBreak/>
+                                Летние покрышки
+                            </TextBlock>
+
+                        </StackPanel>
+                    </ToolTip>
+                </Button.ToolTip>
+
+            </Button>
+
+            <!--Акустика-->
+            <Button
+                Name="Music"
+                Click="Music_Click"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Left"
+                Content="Акустика"
+                Margin="30,0,0,45"
+                Width="130"
+                Height="40"
+                Foreground="#FFB1B1B1"
+                FontFamily="Bodoni MT Black"
+                FontWeight="Bold"
+                FontSize="16"
+                Background="{x:Null}"
+                BorderBrush="#FFBEB7E2">
+
+                <Button.ToolTip>
+                    <ToolTip Background="Transparent">
+                        <StackPanel>
+
+                            <TextBlock 
+                            Margin="3" 
+                            Foreground="DarkOrange">
+                            Сабвуферы
+                            <LineBreak/>
+                            Тыловые колонки
+                            </TextBlock>
+
+                        </StackPanel>
+                    </ToolTip>
+                </Button.ToolTip>
+
+            </Button>
+
+            <!--Расходники-->
+        <Button
+                Name="Rashodnik"
+                Click="Rashodnik_Click"
+                Content="Расходуемый материал"
+                Margin="0,0,50,85"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Right"
+                Width="210"
+                Height="40"
+                Foreground="#FFB1B1B1"
+                FontFamily="Bodoni MT Black"
+                FontWeight="Bold"
+                FontSize="16"
+                Background="{x:Null}"
+                BorderBrush="#FFBEB7E2">
+
+            <Button.ToolTip>
+                <ToolTip Background="Transparent">
+                    <StackPanel>
+
+                        <TextBlock 
+                            Margin="3" 
+                            Foreground="DarkOrange">
+                            Вонючки
+                            <LineBreak/>
+                            Масло(1л,5л,20л)
+                            <LineBreak/>
+                            Стеклоомывайка
+                            <LineBreak/>
+                            Незамерзайка
+                        </TextBlock>
+
+                    </StackPanel>
+                </ToolTip>
+            </Button.ToolTip>
+
+        </Button>
+
+
+        <!--палка-->
+        <Line X1="150"  Y1="380" X2="25" Y2="380" Stroke="#FFBEB7E2"/>
+        
+        <!--тех.поддержка-->
+        <Polygon 
+                x:Name="contact" 
+                Points="0,210,100,250,100,0,0,40" 
+                MouseLeftButtonUp="contact_MouseLeftButtonUp"
+                Width="100"
+                Opacity="0.5" 
+                Margin="400,50,0,470">
+
+            <!--всплывающая подсказка-->
+            <Polygon.ToolTip>
+
+                <ToolTip  
+                    Background="Transparent" 
+                    BorderBrush="DarkOrange">
+
+                    <StackPanel>
+                        <TextBlock
+                            Margin="3" 
+                            Foreground="DarkOrange">
+                            Отправить сообщение автору программы.
+                            <LineBreak/>
+                        </TextBlock>
+                    </StackPanel>
+                </ToolTip>
+
+            </Polygon.ToolTip>
+
+            <Polygon.Fill>
+                <ImageBrush ImageSource="\\192.168.0.6\all\3 курс\31 ИСП\1 гр\Жунускович Русич\3 курсс\акула\cs\contact.jpg" Opacity="0.7"/>
+            </Polygon.Fill>
+
+        </Polygon>
+
+        <Line X1="500" Y1="50" X2="400" Y2="80" Stroke="#FFBEB7E2" Opacity="0.6"/>
+        <Line X1="400" Y1="260" X2="400" Y2="80" Stroke="#FFBEB7E2" Opacity="0.6"/>
+        <Line X1="500" Y1="300" X2="400" Y2="260" Stroke="#FFBEB7E2" Opacity="0.6"/>
+        <Line X1="50" Y1="565" X2="50" Y2="530" Stroke="#FF7E5E9C" Opacity="0.8" StrokeThickness="2"/>
+        <Line X1="50" Y1="605" X2="50" Y2="640" Stroke="#FF7E5E9C" Opacity="0.8" StrokeThickness="2"/>
+        <Line X1="50" Y1="679" X2="50" Y2="716" Stroke="#FF7E5E9C" Opacity="0.8" StrokeThickness="2" Cursor=""/>
+        
+        <!--В наличии-->
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center">
+            
+            <Label  Content="В наличии"
+                    Margin="-20,0,0,30"
+                    Foreground ="White" 
+                    RenderTransformOrigin="0.5,0.5"
+                    BorderBrush="Transparent" 
+                    FontWeight="Bold"
+                    FontFamily="Bahnschrift SemiBold">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-90.887"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            
+        </StackPanel>
+        
+        <!--датагрид-->
+        <StackPanel Margin="0,0,0,10" HorizontalAlignment="Center" VerticalAlignment="Center" Width="auto" Height="100">
+
+            <!--сама таблица-->
+            <Grid>
+                <DataGrid
+                    RowBackground="Transparent"
+                    HeadersVisibility="None"
+                    Name="DG1" 
+                    Height="100" 
+                    Width="auto" 
+                    Foreground="#FFB15A02" 
+                    BorderBrush="#FFBEB7E2"
+                    FontFamily="Bahnschrift SemiBold Condensed" 
+                    FontWeight="Bold" 
+                    FontSize="14"
+                    IsEnabled="True">
+                    
+                    <!--цвет промотки-->
+                    <DataGrid.Resources>
+                        <Style TargetType="ScrollBar">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="Width" Value="1"/>
+                        </Style>
+                    </DataGrid.Resources>
+
+                    <!--прозрачность таблицы-->
+                    <DataGrid.Background>
+                        <SolidColorBrush
+                            Color="#FF807C77" 
+                            Opacity="0.25"/>
+                    </DataGrid.Background>
+
+                </DataGrid>
+            </Grid>
+
+
+        </StackPanel>
+    </Grid>
+</Page>
