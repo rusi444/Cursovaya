@@ -59,10 +59,10 @@ namespace CPS
 
         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (e.ChangedButton == MouseButton.Left)
-            {
-                this.DragMove();
-            }
+            //if (e.ChangedButton == MouseButton.Left)
+            //{
+            //    this.DragMove();
+            //}
         }
     }
 }

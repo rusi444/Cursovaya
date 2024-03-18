@@ -1,4 +1,6 @@
 ﻿//using DevExpress.Utils.IoC;
+using CPS.Child_Pages;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,33 +45,33 @@ namespace CPS
 
         private void Engine_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("поршни");;
+            Class1.frame.Navigate(new CP_Engine());;
         }
 
         private void spark_plugs_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("свечки");
+            Class1.frame.Navigate(new CP_Engine());
         }
 
         private void filters_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("фильтры");
+            Class1.frame.Navigate(new CP_Engine());
         }
 
 
         private void starter_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("стартер");
+            Class1.frame.Navigate(new CP_Engine());
         }
 
         private void oil_pan_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("масляной поддон");
+            Class1.frame.Navigate(new CP_Engine());
         }
 
         private void other_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("other");
+            Class1.frame.Navigate(new CP_Engine());
         }
 
         private void HideBtn_Click(object sender, RoutedEventArgs e)

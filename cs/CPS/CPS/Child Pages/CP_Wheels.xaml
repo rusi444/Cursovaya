@@ -22,7 +22,16 @@
             FontFamily="Algerian"
             FontSize="32"
             Opacity="0.7"/>
-        
+        <Label 
+            VerticalAlignment="Top"
+            HorizontalAlignment="Center"
+            Content="Wheels"
+            FontWeight="Bold"
+            FontFamily="Algerian"
+            FontSize="16"
+            Opacity="0.7"
+            Margin="0,35"/>
+
         <!--Обводка-->
         <Border 
             BorderThickness="3"

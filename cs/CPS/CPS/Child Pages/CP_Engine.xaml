@@ -1,0 +1,129 @@
+﻿<Page x:Class="CPS.Child_Pages.CP_Engine"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CPS.Child_Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CP_Engine">
+
+    <Page.Clip>
+        <RectangleGeometry Rect="0,0,800,450" RadiusX="25" RadiusY="25"/>
+    </Page.Clip>
+
+    <Grid Background="#FFA9A195">
+
+        <!--Надпись-->
+        <Label 
+            VerticalAlignment="Top"
+            HorizontalAlignment="Center"
+            Content="assortment"
+            FontWeight="Bold"
+            FontFamily="Algerian"
+            FontSize="24"
+            Opacity="0.7"/>
+        <Label 
+            VerticalAlignment="Top"
+            HorizontalAlignment="Center"
+            Content="Engine"
+            FontWeight="Bold"
+            FontFamily="Algerian"
+            FontSize="16"
+            Opacity="0.7"
+            Margin="0,25"/>
+
+        <!--Закрыть-->
+        <Button
+             HorizontalAlignment="Right"
+             VerticalAlignment="Top"
+             Margin="15,8"
+             Width="30"
+             Height="15"
+             Name="CloseBtn"
+             Background="Transparent"
+             BorderBrush="Black"
+             BorderThickness="0.65"
+             Content="X"
+             FontSize="8"
+             Command="{Binding ExitCommand}"
+             Foreground="White"
+             FontWeight="Bold" 
+             Cursor="Hand"
+             Click="CloseBtn_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+                <Button.ToolTip>
+                    <ToolTip Background="Transparent" BorderBrush="Transparent">
+                        <StackPanel>
+                            <TextBlock 
+                         Margin="3" 
+                         Foreground="#FF790A0A">
+                         Закрыть форму
+                            </TextBlock>
+                        </StackPanel>
+                    </ToolTip>
+                </Button.ToolTip>
+        </Button>
+        
+        <!--Свернуть-->
+        <Button 
+            VerticalAlignment="Top"
+            HorizontalAlignment="Right"
+            Width="30"
+            Height="15"
+            Margin="50,8"
+            Background="Transparent"
+            Content="______"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="6"
+            BorderThickness="0.65"
+            BorderBrush="Black"
+            Foreground="White"
+            Name="HideBtn"
+            Click="HideBtn_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+            <Button.ToolTip>
+                <ToolTip Background="Transparent" BorderBrush="Transparent">
+                    <StackPanel>
+                        <TextBlock 
+                    Margin="3" 
+                    Foreground="#FF790A0A">
+                    Свернуть
+                        </TextBlock>
+                    </StackPanel>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+
+        <!--вернуться на предыдущую страницу-->
+        <Button 
+            Click="BtnBackPage_Click" 
+            Name="BtnBackPage" 
+            HorizontalAlignment="Right" 
+            VerticalAlignment="Top"
+            Margin="90,6" 
+            Foreground="DarkCyan" 
+            FontFamily="Bahnschrift SemiBold"
+            FontWeight="Bold" 
+            FontSize="12"
+            Background="Transparent"
+            BorderBrush="Transparent"/>
+
+        <!--контуп-->
+        <Border 
+            BorderThickness="2.5" 
+            BorderBrush="#FFFBFFB5"
+            CornerRadius="25" 
+            Opacity="1"/>
+
+    </Grid>
+</Page>

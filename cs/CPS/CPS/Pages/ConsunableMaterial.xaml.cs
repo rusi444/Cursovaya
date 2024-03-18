@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CPS.Child_Pages;
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -45,22 +47,22 @@ namespace CPS
 
         private void Smell_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Запах");
+            Class1.frame.Navigate(new CP_ConsunableMaterial());
         }
 
         private void Oil_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Масло");
+            Class1.frame.Navigate(new CP_ConsunableMaterial());
         }
 
         private void GlassWasher_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Стеклоомывайка");
+            Class1.frame.Navigate(new CP_ConsunableMaterial());
         }
 
         private void NonFreezing_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Незамерзайка");
+            Class1.frame.Navigate(new CP_ConsunableMaterial());
         }
 
         private void HideBtn_Click(object sender, RoutedEventArgs e)

@@ -25,7 +25,7 @@ namespace CPS
                     }
                     else if (Result == MessageBoxResult.No)
                     {
-                        //
+
                     }
                 });
             }

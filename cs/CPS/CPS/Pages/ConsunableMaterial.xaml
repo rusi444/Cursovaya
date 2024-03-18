@@ -53,8 +53,7 @@
             </Button.ToolTip>
         </Button>
 
-        <Border BorderThickness="2.5" BorderBrush="#FF8E6128" CornerRadius="25" Opacity="0.6">
-        </Border>
+        <Border BorderThickness="2.5" BorderBrush="#FF8E6128" CornerRadius="25" Opacity="0.6"/>
 
         <!--Запах-->
         <Button 

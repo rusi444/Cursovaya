@@ -76,6 +76,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Child Pages\CP_ConsunableMaterial.xaml.cs">
+      <DependentUpon>CP_ConsunableMaterial.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Child Pages\CP_Engine.xaml.cs">
+      <DependentUpon>CP_Engine.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Child Pages\CP_Wheels.xaml.cs">
       <DependentUpon>CP_Wheels.xaml</DependentUpon>
     </Compile>
@@ -128,6 +134,14 @@
     <Compile Include="Pages\Wheels.xaml.cs">
       <DependentUpon>Wheels.xaml</DependentUpon>
     </Compile>
+    <Page Include="Child Pages\CP_ConsunableMaterial.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Child Pages\CP_Engine.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Child Pages\CP_Wheels.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
