@@ -82,6 +82,9 @@
     <Compile Include="Child Pages\CP_Engine.xaml.cs">
       <DependentUpon>CP_Engine.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Child Pages\CP_Page5.xaml.cs">
+      <DependentUpon>CP_Page5.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Child Pages\CP_Wheels.xaml.cs">
       <DependentUpon>CP_Wheels.xaml</DependentUpon>
     </Compile>
@@ -139,6 +142,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Child Pages\CP_Engine.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Child Pages\CP_Page5.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

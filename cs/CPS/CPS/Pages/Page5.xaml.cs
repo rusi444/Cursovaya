@@ -1,4 +1,6 @@
-﻿using DevExpress.Xpf.Editors;
+﻿using CPS.Child_Pages;
+
+using DevExpress.Xpf.Editors;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -46,47 +48,47 @@ namespace CPS
 
         private void Polygon_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("test1");
+            Class1.frame.Navigate(new CP_Page5());
         }
 
         private void Label_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("test1");
+            Class1.frame.Navigate(new CP_Page5());
         }
 
         private void Label_MouseLeftButtonUp_1(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("test1");
+            Class1.frame.Navigate(new CP_Page5());
         }
 
         private void Polygon_MouseLeftButtonUp_1(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("test2");
+            Class1.frame.Navigate(new CP_Page5());
         }
 
         private void Label_MouseLeftButtonUp_2(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("test2");
+            Class1.frame.Navigate(new CP_Page5());
         }
 
         private void Label_MouseLeftButtonUp_3(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("test2");
+            Class1.frame.Navigate(new CP_Page5());
         }
 
         private void Polygon_MouseLeftButtonUp_2(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("test3");
+            Class1.frame.Navigate(new CP_Page5());
         }
 
         private void Label_MouseLeftButtonUp_4(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("test3");
+            Class1.frame.Navigate(new CP_Page5());
         }
 
         private void Label_MouseLeftButtonUp_5(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("test3");
+            Class1.frame.Navigate(new CP_Page5());
         }
 
         private void HideBtn_Click(object sender, RoutedEventArgs e)
