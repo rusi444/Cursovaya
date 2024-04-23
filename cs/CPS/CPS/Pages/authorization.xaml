@@ -11,7 +11,7 @@
         <RectangleGeometry Rect="0,0,400,500" RadiusX="30" RadiusY="25"/>
     </Page.Clip>
     <Page.Background>
-        <ImageBrush ImageSource="\\192.168.0.6\all\3 курс\31 ИСП\1 гр\Жунускович Русич\3 курсс\акула\cs\i.jpg" />
+        <ImageBrush ImageSource="N:\3 курс\31 ИСП\1 гр\Жунускович Русич\3 курсс\Курсовая\Cursovaya\cs\i.jpg" />
     </Page.Background>
     <Grid>
 
@@ -119,7 +119,7 @@
                     FontSize="14">
 
                 <Button.Background>
-                    <ImageBrush ImageSource="\\192.168.0.6\all\3 курс\31 ИСП\1 гр\Жунускович Русич\3 курсс\акула\cs\dasas.jpg" />
+                    <ImageBrush ImageSource="N:\3 курс\31 ИСП\1 гр\Жунускович Русич\3 курсс\Курсовая\Cursovaya\cs\dasas.jpg" />
                 </Button.Background>
 
             </Button>

@@ -12,10 +12,12 @@ namespace CPS
     using System;
     using System.Collections.Generic;
     
-    public partial class contact
+    public partial class product
     {
         public int id { get; set; }
-        public string contact_with_client { get; set; }
-        public string name_client { get; set; }
+        public string name { get; set; }
+        public int price { get; set; }
+        public int quantity { get; set; }
+        public string description { get; set; }
     }
 }

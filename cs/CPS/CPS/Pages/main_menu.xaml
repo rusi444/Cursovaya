@@ -13,7 +13,7 @@
     </Page.Clip>
 
     <Page.Background>
-        <ImageBrush ImageSource="\\192.168.0.6\all\3 курс\31 ИСП\1 гр\Жунускович Русич\3 курсс\акула\cs\XXXL.jpg" />
+        <ImageBrush ImageSource="N:\3 курс\31 ИСП\1 гр\Жунускович Русич\3 курсс\Курсовая\Cursovaya\cs\XXXL.jpg" />
     </Page.Background>
     
     
@@ -329,7 +329,7 @@
             </Polygon.ToolTip>
 
             <Polygon.Fill>
-                <ImageBrush ImageSource="\\192.168.0.6\all\3 курс\31 ИСП\1 гр\Жунускович Русич\3 курсс\акула\cs\contact.jpg" Opacity="0.7"/>
+                <ImageBrush ImageSource="N:\3 курс\31 ИСП\1 гр\Жунускович Русич\3 курсс\Курсовая\Cursovaya\cs\contact.jpg" Opacity="0.7"/>
             </Polygon.Fill>
 
         </Polygon>

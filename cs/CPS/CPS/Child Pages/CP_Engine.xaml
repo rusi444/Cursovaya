@@ -125,5 +125,177 @@
             CornerRadius="25" 
             Opacity="1"/>
 
+
+        <Button
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"
+            Margin="15,0,0,125"
+            Height="45"
+            Width="160"
+            Background="Transparent"
+            BorderBrush="Black"
+            BorderThickness="0.7"
+            Content="Часть двигла"
+            Foreground="Black"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="15"
+            Name="FirstEng"
+            Click="FirstEng_Click"/>
+
+        <Button
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"
+            Margin="15,45,0,0"
+            Height="45"
+            Width="160"
+            Background="Transparent"
+            BorderBrush="Black"
+            BorderThickness="0.7"
+            Content="Часть двигла"
+            Foreground="Black"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="15"
+            Name="SecondEng"
+            Click="SecondEng_Click"/>
+
+        <Button
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"
+            Margin="15,210,0,0"
+            Height="45"
+            Width="160"
+            Background="Transparent"
+            BorderBrush="Black"
+            BorderThickness="0.7"
+            Content="Часть двигла"
+            Foreground="Black"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="15"
+            Name="ThirdEng"
+            Click="ThirdEng_Click"/>
+
+        <Button
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"
+            Margin="320,0,0,125"
+            Height="45"
+            Width="160"
+            Background="Transparent"
+            BorderBrush="Black"
+            BorderThickness="0.7"
+            Content="Часть двигла"
+            Foreground="Black"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="15"
+            Name="FourthEng"
+            Click="FourthEng_Click"/>
+
+        <Button
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"
+            Margin="320,45,0,0"
+            Height="45"
+            Width="160"
+            Background="Transparent"
+            BorderBrush="Black"
+            BorderThickness="0.7"
+            Content="Часть двигла"
+            Foreground="Black"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="15"
+            Name="FiveEng"
+            Click="FiveEng_Click"/>
+
+        <Button
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"
+            Margin="320,210,0,0"
+            Height="45"
+            Width="160"
+            Background="Transparent"
+            BorderBrush="Black"
+            BorderThickness="0.7"
+            Content="Часть двигла"
+            Foreground="Black"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="15"
+            Name="SixEng"
+            Click="SixEng_Click"/>
+
+        <Button
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"
+            Margin="625,0,0,125"
+            Height="45"
+            Width="160"
+            Background="Transparent"
+            BorderBrush="Black"
+            BorderThickness="0.7"
+            Content="Часть двигла"
+            Foreground="Black"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="15"
+            Name="SeventhEng"
+            Click="SeventhEng_Click"/>
+
+        <Button
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"
+            Margin="625,45,0,0"
+            Height="45"
+            Width="160"
+            Background="Transparent"
+            BorderBrush="Black"
+            BorderThickness="0.7"
+            Content="Часть двигла"
+            Foreground="Black"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="15"
+            Name="EigthEng"
+            Click="EigthEng_Click"/>
+
+        <Button
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"
+            Margin="625,210,0,0"
+            Height="45"
+            Width="160"
+            Background="Transparent"
+            BorderBrush="Black"
+            BorderThickness="0.7"
+            Content="Часть двигла"
+            Foreground="Black"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="15"
+            Name="NinethEng"
+            Click="NinethEng_Click"/>
+
+
+        <Button
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Center"
+            Margin="10"
+            Height="45"
+            Width="160"
+            Background="Transparent"
+            BorderBrush="Black"
+            BorderThickness="0.7"
+            Content="Обновить страницу"
+            Foreground="Black"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="15"
+            Name="RefreshPage"
+            Click="RefreshPage_Click"/>
+
     </Grid>
 </Page>

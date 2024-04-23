@@ -50,5 +50,55 @@ namespace CPS.Child_Pages
 
             }
         }
+
+        private void FirstEng_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SecondEng_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ThirdEng_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void FourthEng_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void FiveEng_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SixEng_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SeventhEng_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void EigthEng_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void NinethEng_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RefreshPage_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Refresh();
+        }
     }
 }

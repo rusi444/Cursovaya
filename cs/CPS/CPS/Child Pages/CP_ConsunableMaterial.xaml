@@ -12,7 +12,7 @@
         <RectangleGeometry Rect="0,0,600,700" RadiusX="25" RadiusY="25"/>
     </Page.Clip>
 
-    <Grid Background="White">
+    <Grid Background="#FFFDFDFD">
 
         <!--Надпись-->
         <Label 
@@ -24,7 +24,7 @@
              FontSize="24"
              Opacity="0.7"
              Foreground="Black"/>
-                <Label 
+        <Label 
              VerticalAlignment="Top"
              HorizontalAlignment="Center"
              Content="Spent"
@@ -125,6 +125,161 @@
                 </ToolTip>
             </Button.ToolTip>
         </Button>
+
+
+        <Button
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Margin="40,225"
+            Width="140"
+            Height="50"
+            Background="Transparent"
+            BorderBrush="LightGray"
+            BorderThickness="0.7"
+            Content="Расходный мат"
+            Foreground="DarkOrange"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="16"
+            Name="FirstCons"
+            Click="FirstCons_Click"/>
+
+        <Button
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Margin="40,325,0,0"
+            Width="140"
+            Height="50"
+            Background="Transparent"
+            BorderBrush="LightGray"
+            BorderThickness="0.7"
+            Content="Расходный мат"
+            Foreground="DarkOrange"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="16"
+            Name="SecondCons"
+            Click="SecondCons_Click"/>
+
+        <Button
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Margin="40,425,0,0"
+            Width="140"
+            Height="50"
+            Background="Transparent"
+            BorderBrush="LightGray"
+            BorderThickness="0.7"
+            Content="Расходный мат"
+            Foreground="DarkOrange"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="16"
+            Name="ThirdCons"
+            Click="ThirdCons_Click"/>
+
+        <Button
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Margin="40,125"
+            Width="140"
+            Height="50"
+            Background="Transparent"
+            BorderBrush="LightGray"
+            BorderThickness="0.7"
+            Content="Расходный мат"
+            Foreground="DarkOrange"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="16"
+            Name="FourthCons"
+            Click="FourthCons_Click"/>
+
+        <Button
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Margin="420,125,0,0"
+            Width="140"
+            Height="50"
+            Background="Transparent"
+            BorderBrush="LightGray"
+            BorderThickness="0.7"
+            Content="Расходный мат"
+            Foreground="DarkOrange"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="16"
+            Name="FiveCons"
+            Click="FiveCons_Click"/>
+
+        <Button
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Margin="420,225,0,0"
+            Width="140"
+            Height="50"
+            Background="Transparent"
+            BorderBrush="LightGray"
+            BorderThickness="0.7"
+            Content="Расходный мат"
+            Foreground="DarkOrange"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="16"
+            Name="SixCons"
+            Click="SixCons_Click"/>
+
+        <Button
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Margin="420,325,0,0"
+            Width="140"
+            Height="50"
+            Background="Transparent"
+            BorderBrush="LightGray"
+            BorderThickness="0.7"
+            Content="Расходный мат"
+            Foreground="DarkOrange"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="16"
+            Name="SeventhCons"
+            Click="SeventhCons_Click"/>
+
+        <Button
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Margin="420,425,0,0"
+            Width="140"
+            Height="50"
+            Background="Transparent"
+            BorderBrush="LightGray"
+            BorderThickness="0.7"
+            Content="Расходный мат"
+            Foreground="DarkOrange"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="16"
+            Name="EigthCons"
+            Click="EigthCons_Click"/>
+
+
+        <Button
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Center"
+            Margin="75"
+            Width="150"
+            Height="50"
+            Background="Transparent"
+            BorderBrush="LightGray"
+            BorderThickness="0.7"
+            Content="Обновить страницу"
+            Foreground="DarkOrange"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="16"
+            Name="RefreshPage"
+            Click="RefreshPage_Click"/>
 
     </Grid>
 </Page>

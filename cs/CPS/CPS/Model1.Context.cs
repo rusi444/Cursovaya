@@ -25,9 +25,9 @@ namespace CPS
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<contact> contact { get; set; }
         public virtual DbSet<parts> parts { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<user> user { get; set; }
+        public virtual DbSet<product> product { get; set; }
     }
 }

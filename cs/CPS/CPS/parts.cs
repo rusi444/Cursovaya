@@ -16,6 +16,6 @@ namespace CPS
     {
         public int id { get; set; }
         public string name { get; set; }
-        public Nullable<int> quantity { get; set; }
+        public int quantity { get; set; }
     }
 }

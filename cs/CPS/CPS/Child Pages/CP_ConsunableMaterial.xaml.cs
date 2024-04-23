@@ -50,5 +50,50 @@ namespace CPS.Child_Pages
 
             }
         }
+
+        private void FirstCons_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SecondCons_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ThirdCons_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void FourthCons_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void FiveCons_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SixCons_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SeventhCons_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void EigthCons_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RefreshPage_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Refresh();
+        }
     }
 }

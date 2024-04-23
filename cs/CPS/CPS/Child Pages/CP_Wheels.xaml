@@ -6,8 +6,9 @@
       xmlns:local="clr-namespace:CPS.Child_Pages"
       mc:Ignorable="d" 
       d:DesignHeight="700" d:DesignWidth="600"
-      Title="CP_Wheels">
-    
+      Title="CP_Wheels"
+      Loaded="Page_Loaded">
+
     <Page.Clip>
         <RectangleGeometry Rect="0,0,600,700" RadiusX="25" RadiusY="25"/>
     </Page.Clip>
@@ -23,6 +24,51 @@
             FontFamily="Algerian"
             FontSize="32"
             Opacity="0.7"/>
+
+        <TextBox
+                IsReadOnly="True"
+                FontSize="15"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Margin="0,338,120,0"
+                Foreground="DarkGreen"
+                Background="Transparent"
+                BorderBrush="#FF545454"
+                Name="GeneralCountTxb"
+                FontFamily="Bahnschrift"
+                FontWeight="Bold"/>
+
+        <TextBox
+                IsReadOnly="True"
+                FontSize="15"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Margin="0,198,160,0"
+                Foreground="DarkGreen"
+                Background="Transparent"
+                BorderBrush="#FF545454"
+                Name="GeneralCountTxbTires"
+                FontFamily="Bahnschrift"
+                FontWeight="Bold"/>
+
+        <Label
+            Content="Общее количество дисков:"
+            Foreground="DarkGreen"
+            FontSize="16"
+            FontWeight="Bold"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Margin="0,330,350,0"/>
+
+        <Label
+            Content="Общее количество шин:"
+            Foreground="DarkGreen"
+            FontSize="16"
+            FontWeight="Bold"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Margin="0,190,370,0"/>  
+
         <Label 
             VerticalAlignment="Top"
             HorizontalAlignment="Center"
@@ -33,12 +79,24 @@
             Opacity="0.7"
             Margin="0,35"/>
 
+        <Label 
+            VerticalAlignment="Top"
+            HorizontalAlignment="Center"
+            Content="Wheels ANDy Tires"
+            FontWeight="Bold"
+            FontFamily="Algerian"
+            Foreground="#FF162635"
+            FontSize="36"
+            Opacity="0.7"
+            Margin="80"/>
+
         <!--Обводка-->
         <Border 
             BorderThickness="3"
             BorderBrush="Beige"
             CornerRadius="25"
-            Opacity="1"/>
+            Opacity="1">
+        </Border>
 
         <!--Закрыть-->
         <Button
@@ -125,5 +183,140 @@
             </Button.ToolTip>
         </Button>
 
+        <Button
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Center"
+            Margin="10"
+            Height="45"
+            Width="160"
+            Background="Transparent"
+            BorderBrush="Black"
+            BorderThickness="0.7"
+            Content="Обновить страницу"
+            Foreground="#FFE0E0E0"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="15"
+            Name="RefreshPage"
+            Click="RefreshPage_Click"/>
+
+        <Button
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Margin="310,370,0,0"
+            Height="45"
+            Width="255"
+            Background="Transparent"
+            BorderBrush="Black"
+            BorderThickness="0.7"
+            Content="Литой диск DWS PR-5084 11j 21"
+            Foreground="#FF93D5FF"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="15"
+            Name="WheelsBtn1"
+            Click="WheelsBtn1_Click"/>
+
+        <Button
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Margin="310,470,0,0"
+            Height="45"
+            Width="255"
+            Background="Transparent"
+            BorderBrush="Black"
+            BorderThickness="0.7"
+            Content="Литой диск Wheels UP Up109 18"
+            Foreground="#FF93D5FF"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="15"
+            Name="WheelsBtn2"
+            Click="WheelsBtn2_Click"/>
+
+        <Button
+            VerticalAlignment="Top"
+            HorizontalAlignment="Center"
+            Margin="0,370,280,0"
+            Height="45"
+            Width="255"
+            Background="Transparent"
+            BorderBrush="Black"
+            BorderThickness="0.7"
+            Content="Литой диск DWS MB-3414 9.5j 19"
+            Foreground="#FF93D5FF"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="15"
+            Name="WheelsBtn3"
+            Click="WheelsBtn3_Click"/>
+
+        <Button
+            VerticalAlignment="Top"
+            HorizontalAlignment="Center"
+            Margin="0,470,280,0"
+            Height="45"
+            Width="255"
+            Background="Transparent"
+            BorderBrush="Black"
+            BorderThickness="0.7"
+            Content="Литой диск DWS MB-762 9.5j 20"
+            Foreground="#FF93D5FF"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="15"
+            Name="WheelsBtn4"
+            Click="WheelsBtn4_Click"/>
+
+        <Button
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Margin="175,570,0,0"
+            Height="45"
+            Width="255"
+            Background="Transparent"
+            BorderBrush="Black"
+            BorderThickness="0.7"
+            Content="Литой диск DWS MB-762 9.5j 20"
+            Foreground="#FF93D5FF"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="15"
+            Name="WheelsBtn5"
+            Click="WheelsBtn5_Click"/>
+
+        <Button
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Margin="310,230,0,0"
+            Height="45"
+            Width="255"
+            Background="Transparent"
+            BorderBrush="Black"
+            BorderThickness="0.7"
+            Content="Шина пневм. 175/70R13 Tunga Zodiak 2"
+            Foreground="#FF93D5FF"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="14"
+            Name="TireBtn1"
+            Click="TireBtn1_Click"/>
+
+        <Button
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Margin="35,230,0,0"
+            Height="45"
+            Width="255"
+            Background="Transparent"
+            BorderBrush="Black"
+            BorderThickness="0.7"
+            Content="Шина пневм. 205/60R16 Ikon Tyres Nordman"
+            Foreground="#FF93D5FF"
+            FontWeight="Bold"
+            FontFamily="Bahnschrift"
+            FontSize="12"
+            Name="TireBtn2"
+            Click="TireBtn2_Click"/>
     </Grid>
 </Page>

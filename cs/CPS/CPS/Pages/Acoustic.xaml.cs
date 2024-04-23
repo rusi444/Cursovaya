@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CPS.Child_Pages;
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -43,12 +45,12 @@ namespace CPS
 
         private void SubFoower_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Саб");
+            Class1.frame.Navigate(new CP_Acoustic());
         }
 
         private void kolonki_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("ТК");
+            Class1.frame.Navigate(new CP_Acoustic());
         }
 
         private void CloseBtn_Click(object sender, RoutedEventArgs e)
